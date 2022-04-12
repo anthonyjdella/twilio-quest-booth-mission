@@ -1,8 +1,8 @@
 {
-  "title": "VR Mission Template",
-  "description": "This is an example of how to create a 'training mission' for the VR training environment aboard the Fog Owl!",
-  "questTitle": "Virtual Reality Training",
-  "questDescription": "Example level for VR training. See what's possible!",
+  "title": "Twilio Quest Booth Mission",
+  "description": "This is a mission that will help you make your first Twilio Quest API Requests",
+  "questTitle": "Twilio Quest Booth Mission",
+  "questDescription": "Twilio Quest at the Booth! Win a piece of Swag",
   "mission_icon": "mission_icon.png",
   "is_mission": true,
   "priority": 10,
@@ -14,5 +14,5 @@
   "flavorTextOverrides": {
     "bookshelf": "There's nothing like a good book."
   },
-  "objectives": ["example_objective", "example_objective2"]
+  "objectives": ["swag_chest"]
 }

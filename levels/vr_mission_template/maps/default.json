@@ -138,49 +138,6 @@
           "y": 394
         },
         {
-          "gid": 10011,
-          "height": 48,
-          "id": 99,
-          "name": "",
-          "properties": [
-            {
-              "name": "hackable",
-              "type": "bool",
-              "value": false
-            },
-            {
-              "name": "objectiveName",
-              "type": "string",
-              "value": "example_objective2"
-            }
-          ],
-          "rotation": 0,
-          "type": "",
-          "visible": true,
-          "width": 72,
-          "x": 552,
-          "y": 336
-        },
-        {
-          "gid": 10013,
-          "height": 72,
-          "id": 101,
-          "name": "",
-          "properties": [
-            {
-              "name": "objectiveName",
-              "type": "string",
-              "value": "example_objective2"
-            }
-          ],
-          "rotation": 0,
-          "type": "",
-          "visible": true,
-          "width": 24,
-          "x": 516,
-          "y": 378
-        },
-        {
           "gid": 11017,
           "height": 24,
           "id": 105,
