@@ -1,0 +1,15 @@
+{
+  "title": "Buy A Twilio Number",
+  "description": "Enter your Twilio phone number, in E.164 format:",
+  "validation_fields": [
+    {
+      "name": "twilioNumber",
+      "type": "text",
+      "placeholder": "+16518675309",
+      "label": "Enter your Twilio phone number, in E.164 format:"
+    }
+  ],
+  "rewards": {
+    "xp": 100
+  }
+}

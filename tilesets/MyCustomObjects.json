@@ -41,9 +41,9 @@
             },
          "properties":[
                 {
-                 "name":"objectiveName",
+                 "name":"Swag Chest",
                  "type":"string",
-                 "value":"example_objective"
+                 "value":"swag_chest"
                 }],
          "type":"light-green"
         }, 

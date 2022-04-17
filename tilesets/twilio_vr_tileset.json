@@ -1,0 +1,14 @@
+{ "columns":30,
+    "image":"twilio_vr_tileset.png",
+    "imageheight":720,
+    "imagewidth":720,
+    "margin":0,
+    "name":"twilio_vr_tileset",
+    "spacing":0,
+    "tilecount":900,
+    "tiledversion":"1.7.2",
+    "tileheight":24,
+    "tilewidth":24,
+    "type":"tileset",
+    "version":"1.6"
+   }
