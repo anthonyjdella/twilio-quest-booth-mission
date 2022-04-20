@@ -1,15 +1,10 @@
+
 {
-  "title": "Free Twilio Swag!",
-  "description": "Open this chest to win a piece of <strong>Awesome Twilio Swag</strong>",
-  "validation_fields": [
-    {
-      "name": "secretCode",
-      "type": "text",
-      "placeholder": "SECRET CODE",
-      "label": "Find the Secret Code hidden in the vault"
-    }
-  ],
+  "title": "Congratulations! You have won a swag Item",
+  "description": "Pick a piece of swag from our wonderful collection",
+  "validation_fields": [],
   "rewards": {
-    "xp": 0
+    "xp": 200,
+    "items": ["3_hearts"]
   }
 }

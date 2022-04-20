@@ -1,0 +1,17 @@
+{
+    "title": "Messaging Fundamentals: Respond to incoming SMS",
+    "description": "Use webhooks and TwiML to respond to an incoming SMS message.",
+    "show_ide": true,
+    "validation_fields": [
+      {
+        "name": "testPrompt",
+        "type": "prompt",
+        "placeholder": "",
+        "label": "When you have replied to an incoming SMS with the text 'TwilioQuest rules', press the HACK button to validate."
+      }
+    ],
+    "rewards": {
+      "xp": 200,
+      "items": ["3_hearts"]
+    }
+  }
