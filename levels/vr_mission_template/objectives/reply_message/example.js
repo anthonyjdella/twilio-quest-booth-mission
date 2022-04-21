@@ -10,8 +10,10 @@ app.use(urlencoded({ extended: false }));
 // This is where the magic happens!
 app.post('/sms', (request, response) => {
   console.log(`Incoming message from ${request.body.From}: ${request.body.Body}`);
+  response.type('text/xml')
   response.send(`
     // Replace these commented-out lines with your reply!"
+    // You'll need to use a <Response> & <Message> Tag
   `);
 });
 
