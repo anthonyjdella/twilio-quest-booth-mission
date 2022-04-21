@@ -1,17 +1,6 @@
-// Here, we load Twilio's helper library for Node.js
-const twilio = require('twilio');
+const client = twilio(process.env.TQ_TWILIO_ACCOUNT_SID,process.env.TQ_TWILIO_AUTH_TOKEN);
 
-// Next we create an authenticated API client with the account credentials
-// you configured earlier. TwilioQuest makes these configuration properties
-// available as system environment variables in your code
-const client = twilio(
-  process.env.TQ_TWILIO_ACCOUNT_SID,
-  process.env.TQ_TWILIO_AUTH_TOKEN
-);
 
-// Here, we use our API client to make a request to the Twilio
-// REST API. Substitute your own mobile number and message body below, and
-// watch what happens when you press play!
 client.messages.create({
   from: process.env.TQ_TWILIO_NUMBER,
 

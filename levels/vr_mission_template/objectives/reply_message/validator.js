@@ -4,8 +4,7 @@ module.exports = async helper => {
       const messages = await client.messages.list({ limit: 100 });
       const found = messages.find(
         msg =>
-          msg.direction === 'outbound-reply' &&
-          msg.body.toLowerCase().includes('twilioquest rules')
+          msg.direction === 'outbound-reply'
       );
       if (!found) {
         throw `We couldn't find a reply message in your last 100 messages that contained the text "TwilioQuest rules" 
