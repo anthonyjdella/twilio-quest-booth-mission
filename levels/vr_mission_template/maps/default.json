@@ -325,7 +325,7 @@
                         {
                          "name":"objectiveName",
                          "type":"string",
-                         "value":"send_message"
+                         "value":"buy_number"
                         }],
                  "rotation":0,
                  "type":"",
@@ -343,7 +343,7 @@
                         {
                          "name":"objectiveName",
                          "type":"string",
-                         "value":"send_message"
+                         "value":"tutorial"
                         }],
                  "rotation":0,
                  "type":"",
