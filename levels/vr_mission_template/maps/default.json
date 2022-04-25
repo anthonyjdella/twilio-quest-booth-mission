@@ -241,42 +241,6 @@
                  "y":874.19201724138
                 }, 
                 {
-                 "gid":10011,
-                 "height":48,
-                 "id":144,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"objectiveName",
-                         "type":"string",
-                         "value":"reply_message"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":72,
-                 "x":624.021551724138,
-                 "y":743.288793103448
-                }, 
-                {
-                 "gid":10013,
-                 "height":72,
-                 "id":147,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"objectiveName",
-                         "type":"string",
-                         "value":"reply_message"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":24,
-                 "x":693.818965517241,
-                 "y":779.534482758621
-                }, 
-                {
                  "gid":10002,
                  "height":36,
                  "id":151,
@@ -331,8 +295,8 @@
                  "type":"",
                  "visible":true,
                  "width":24,
-                 "x":334.174568965517,
-                 "y":1049.66810344828
+                 "x":324.480603448276,
+                 "y":1053.32112068966
                 }, 
                 {
                  "gid":10013,
@@ -349,8 +313,8 @@
                  "type":"",
                  "visible":true,
                  "width":24,
-                 "x":322.827586206897,
-                 "y":1222.08189655172
+                 "x":324.827586206897,
+                 "y":1223.08189655172
                 }],
          "opacity":1,
          "type":"objectgroup",
