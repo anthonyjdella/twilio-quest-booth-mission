@@ -1,40 +1,20 @@
+module.exports = async helper => {
+  const { callSid } = helper.validationFields;
 
-   
-const { NiceError, handleError } = require('../../validation');
-
-module.exports = async function(helper) {
-  const phoneNumber = helper.env['TQ_TWILIO_NUMBER'];
-  const phoneNumberLink = `<a href="https://www.twilio.com/console/phone-numbers/${
-    helper.env['TQ_TWILIO_NUMBER_SID']
-  }">${phoneNumber}</a>`;
-
-  try 
-    const number = await helper.findPhoneNumber(phoneNumber);
-    if (!number.voiceUrl) {
-      throw `
-        Looks like you still need to set the incoming field values on 
-        your phone number: ${phoneNumberLink}.
-      `;
+  try {
+    const client = helper.getTwilioClient();
+    if (!callSid) {
+      throw `A call SID is required for validation - 
+        you get one of these back from an API request that creates a new Phone Call.`;
     }
 
-    // Request traversable TwiML from configured webhook URL - can throw for
-    // a variety of error conditions (handled below in catch)
-    const $ = await helper.fakeCall(
-      number.voiceUrl,
-      number.phoneNumber,
-      helper.fakeNumber
-    );
+    const call = await client.calls(callSid).fetch();
 
-    // Ensure the <Say> tag is present
-    if ($('Response > Say').length < 1) {
-      throw `Whoops! you need to use the &lt;Say&gt; tag in your TwiML wired up to ${phoneNumberLink}.`;
-    }
-
-    helper.success('You are amazing!');
+    helper.success(`Woohoo! You made a Call!!`);
   } catch (e) {
-    handleError(e, helper, `
-      Sorry - we couldn't validate your TwiML URL - double check your
-      configuration for ${phoneNumberLink}.
-    `);
+    helper.fail(e, {
+      20404: `Sorry! We couldn't find a call with that SID when we looked in your Twilio account. 
+            Ensure that your call SID is correct and try again.`,
+    });
   }
 };
