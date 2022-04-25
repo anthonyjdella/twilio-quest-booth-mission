@@ -4,9 +4,9 @@
   "show_ide": true,
   "validation_fields": [
     {
-      "name": "messageSid",
+      "name": "callSid",
       "type": "text",
-      "placeholder": "ACXXXX",
+      "placeholder": "CAXXXX",
       "label": "Enter the call SID of a call made from your account:"
     }
   ],

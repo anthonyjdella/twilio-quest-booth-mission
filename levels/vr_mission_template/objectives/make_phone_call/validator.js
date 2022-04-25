@@ -7,6 +7,7 @@ module.exports = async helper => {
       throw `A call SID is required for validation - 
         you get one of these back from an API request that creates a new Phone Call.`;
     }
+    
 
     const call = await client.calls(callSid).fetch();
 
