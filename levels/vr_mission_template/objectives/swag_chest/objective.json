@@ -4,7 +4,7 @@
   "description": "Pick a piece of swag from our wonderful collection",
   "validation_fields": [],
   "rewards": {
-    "xp": 200,
+    "xp": 0,
     "items": ["3_hearts"]
   }
 }
