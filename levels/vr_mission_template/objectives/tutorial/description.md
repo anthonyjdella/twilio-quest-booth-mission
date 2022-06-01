@@ -10,11 +10,15 @@
   <li>Enter the passcode in the field on the right, then click <em>HACK</em>.</li>
 </ul>
 </div>
-
-The world of TwilioQuest is full of **hackable objects** like this terminal. Using the cutting edge hacking tool developed by the TwilioQuest program, you will be able to hack these objects by completing technical (and non-technical) challenges. These challenges could involve answering questions, writing code in a file on your computer, and much more.
-
-To complete this challenge, you must **Open the Code Editor and find the Passcode**. Type the passcode into the text field on the right and click *HACK* to bring down the laser barrier.
-
+<p>
+To complete this challenge, you must **Open the Code Editor and find the Passcode**.
+</p>
+<p>
+Type the passcode into the text field on the right and click *HACK* to bring down the laser barrier.
+</p>
+<p>
+Don't try and guess. You probably won't get it correct
+</p>
 <style>
 .passcode {
   color: #eee;

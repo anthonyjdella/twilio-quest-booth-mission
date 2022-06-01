@@ -434,7 +434,7 @@
                 {
                  "height":28.6651785714286,
                  "id":164,
-                 "name":"",
+                 "name":"signboard1",
                  "rotation":0,
                  "text":
                     {
@@ -443,7 +443,7 @@
                      "text":"<= Phone\nCalls",
                      "wrap":true
                     },
-                 "type":"",
+                 "type":"chest",
                  "visible":true,
                  "width":48.0178571428571,
                  "x":251.223214285714,
@@ -452,7 +452,7 @@
                 {
                  "height":32.2366285714286,
                  "id":167,
-                 "name":"",
+                 "name":"signboard",
                  "rotation":0,
                  "text":
                     {
@@ -461,7 +461,7 @@
                      "text":"<= WhatsApp\nSMS =>",
                      "wrap":true
                     },
-                 "type":"",
+                 "type":"chest",
                  "visible":true,
                  "width":81.9464714285714,
                  "x":438.49105,
@@ -513,7 +513,7 @@
          "y":0
         }],
  "nextlayerid":44,
- "nextobjectid":168,
+ "nextobjectid":171,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.8.4",

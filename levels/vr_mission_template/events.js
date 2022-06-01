@@ -1,8 +1,13 @@
+const { test } = require('ramda');
+
 module.exports = function(event, world) {
-  let dir = `/Users/${process.env.USER}/Library/Application Support/TwilioQuest/QuestIDE/vr_mission_template`;
   console.log(`VR Template: ${event.name}`);
-  console.log(event);
-  console.log(world);
+  let electron = require('electron')
+  const levelFolder = `${electron.remote.app.getPath('userData')}/QuestIDE/${world.getCurrentLevelName()}`;
+  const sampleCodeFolder = `${world.getContext().extensions.directory}/twilioQuestBoothExecution/levels/vr_mission_template/objectives`;
+  const fs = require('fs');
+
+
 
   if (event.name === 'triggerAreaWasEntered' && event.target.name.includes('Complete')){
     console.log(event)
@@ -16,18 +21,19 @@ module.exports = function(event, world) {
     world.removeObjective('vr_mission_template', 'join_sandbox')
     world.removeObjective('vr_mission_template', 'swag_chest')
 
-
-    switch(event.target.key){
-      case "messaging":
+    //RESET USER CODE
+    fs.readdir(levelFolder, (err, files) => {
+      files.forEach(missionFolder =>{
+        fs.readdir(`${levelFolder}/${missionFolder}`, (err,files) =>{
         
-        break;
-      case "whatsApp":
-        break;
-      case "calls":
-        break;
-      default:
+            console.log(`Rewriting ${missionFolder}`)
+            const dest = `${levelFolder}/${missionFolder}/user_code.js`
+            const src = `${sampleCodeFolder}/${missionFolder}/example.js`
+            fs.copyFile( src, dest, fs.constants.COPYFILE_FICLONE,(error)=> console.error)
+        })
+      });
+    });
 
-    }
 
     world.warp('vr_mission_template','player_entry1','default')
     
