@@ -1,4 +1,3 @@
-const { test } = require('ramda');
 
 module.exports = function(event, world) {
   console.log(`VR Template: ${event.name}`);
