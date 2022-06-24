@@ -61,9 +61,9 @@ To run this custom extension at the booth you will need to have 2 or 3 windows o
 2. At the second barrier they will need to buy a phone number or find the number you already own. Direct them to switch to the other window where they can do this. When they input the number it will be saved as an environment variable.
 
 3. After this they will have 3 choices;
-  * SMS Message: Turn Right; They will have to add a `to` and `body` parameter and send a message to themselves. 
-  * Phone Call: Turn Left; They will have to add a `to` and `url`. For the URL direct them to the TwiML bin page where they can edit the TwiML Bin to Say what they would like.
-  * WhatsApp: Head straight up; They will have to join the sandbox associated with whatever account you are using. They can then send a whatsapp message to themselves on the second mission.
+    * SMS Message: Turn Right; They will have to add a `to` and `body` parameter and send a message to themselves. 
+    * Phone Call: Turn Left; They will have to add a `to` and `url`. For the URL direct them to the TwiML bin page where they can edit the TwiML Bin to Say what they would like.
+    * WhatsApp: Head straight up; They will have to join the sandbox associated with whatever account you are using. They can then send a whatsapp message to themselves on the second mission.
 
 4. Once they have completed the mission they can open the chest. *In the future this will increment a counter to keep a count of the missions completed* To reset the game simply walk through the exit at the top of the screen. This will reload the mission with all the code and the barriers reset.
 
