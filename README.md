@@ -68,8 +68,8 @@ To run this custom extension at the booth you will need to have 2 or 3 windows o
 4. Once they have completed the mission they can open the chest. *In the future this will increment a counter to keep a count of the missions completed* To reset the game simply walk through the exit at the top of the screen. This will reload the mission with all the code and the barriers reset.
 
 ## Future To Do List
-[ ] - Create Automated counter for how many times each mission has been completed
-[ ] - Create Embedded form for people to submit job title, company and email to win prizes
+- [ ] Create Automated counter for how many times each mission has been completed
+- [ ] Create Embedded form for people to submit job title, company and email to win prizes
 
 ## License
 [This template](https://github.com/TwilioQuest/twilioquest-extension-template) is open source under the MIT license.
