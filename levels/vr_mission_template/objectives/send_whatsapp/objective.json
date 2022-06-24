@@ -1,6 +1,6 @@
 {
-  "title": "Messaging Fundamentals: Send a Text Message",
-  "description": "Send your first SMS message using the Twilio API.",
+  "title": "Messaging Fundamentals: Send a WhatsApp Message",
+  "description": "Send your first Whatsapp message using the Twilio API.",
   "show_ide": true,
   "validation_fields": [
     {

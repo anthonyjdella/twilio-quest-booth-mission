@@ -8,10 +8,14 @@ You can install this extension by following the steps in [Enabling Extensions](#
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [TwilioQuest Extension Template](#twilioquest-extension-template)
-  - [Getting Started](#getting-started)
-    - [Enabling extensions](#enabling-extensions)
-  - [License](#license)
+- [Getting Started](#getting-started)
+  - [Enabling extensions](#enabling-extensions)
+  - [Personalisation for Your Twilio Account](#personalisation-for-your-twilio-account)
+- [At the Booth](#at-the-booth)
+  - [Prep](#prep)
+  - [PlayThrough](#playthrough)
+- [Future To Do List](#future-to-do-list)
+- [License](#license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -35,6 +39,37 @@ Once you have enabled extensions, specify a folder on your computer where you wi
 ![Specify a folder path for extensions](https://firebasestorage.googleapis.com/v0/b/twilioquest-prod.appspot.com/o/docs%2Fext-folder.png?alt=media&token=4936dd5c-d84c-459e-9179-4c545a64b297)
 
 Once you have enabled extensions, you should see a listing of automatically-installed "base extensions", and a list of any extensions you have installed yourself.
+
+### Personalisation for Your Twilio Account
+There are a few bits of code that you need to modify so that the instructions are consistent with your account.
+
+1. Ensure that the TwilioQuest game has your demo account sid and auth token
+2. Change the Whatsapp Join Code in `./levels/vr_mission_template/join_sandbox/description.md`
+
+## At the Booth
+Here are instructions that should help guide you through the prep to run TQ at the booth.
+
+### Prep
+To run this custom extension at the booth you will need to have 2 or 3 windows open:
+- Window running TwilioQuest, with the Booth Mission already loaded
+- A logged in Twilio Console account open to the [Buy Numbers](https://console.twilio.com/us1/develop/phone-numbers/manage/search?frameUrl=%2Fconsole%2Fphone-numbers%2Fsearch%3Fx-target-region%3Dus1&currentFrameUrl=%2Fconsole%2Fphone-numbers%2Fsearch%3FisoCountry%3DGB%26searchTerm%3D%26searchFilter%3Dleft%26searchType%3Dnumber%26x-target-region%3Dus1%26__override_layout__%3Dembed%26bifrost%3Dtrue) page. *It's useful to prepare address/identity requirements ahead of time or have a number that is already owned in countries that have difficult process for acquiring numbers.*
+- Optional: A logged in Twilio Console account open to the [Twiml Bins](https://console.twilio.com/us1/develop/twiml-bins/twiml-bins?frameUrl=%2Fconsole%2Ftwiml-bins%3Fx-target-region%3Dus1) page. If possible have a TwiML bin ready with a url
+
+### PlayThrough
+1. When someone starts the game they can play through the first barrier with little guidance.
+
+2. At the second barrier they will need to buy a phone number or find the number you already own. Direct them to switch to the other window where they can do this. When they input the number it will be saved as an environment variable.
+
+3. After this they will have 3 choices;
+  * SMS Message: Turn Right; They will have to add a `to` and `body` parameter and send a message to themselves. 
+  * Phone Call: Turn Left; They will have to add a `to` and `url`. For the URL direct them to the TwiML bin page where they can edit the TwiML Bin to Say what they would like.
+  * WhatsApp: Head straight up; They will have to join the sandbox associated with whatever account you are using. They can then send a whatsapp message to themselves on the second mission.
+
+4. Once they have completed the mission they can open the chest. *In the future this will increment a counter to keep a count of the missions completed* To reset the game simply walk through the exit at the top of the screen. This will reload the mission with all the code and the barriers reset.
+
+## Future To Do List
+[ ] - Create Automated counter for how many times each mission has been completed
+[ ] - Create Embedded form for people to submit job title, company and email to win prizes
 
 ## License
 [This template](https://github.com/TwilioQuest/twilioquest-extension-template) is open source under the MIT license.
