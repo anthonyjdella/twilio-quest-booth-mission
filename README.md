@@ -22,10 +22,6 @@ You can install this extension by following the steps in [Enabling Extensions](#
 ## Getting Started
 The first step is to enable extensions in the TQ game client.
 
-**NOTE:** TwilioQuest Extensions are only available in the **3.2** version of the game. As of spring 2021, the current stable version of the game is 3.1.x. You may need to use the launcher to select the "3.2 Preview" release channel to use a version of the game that supports extensions.
-
-![Launcher for 3.2](https://firebasestorage.googleapis.com/v0/b/twilioquest-prod.appspot.com/o/docs%2Flauncher-preview.png?alt=media&token=6aedd709-9ba2-4ab3-b935-2537a8f5ff2f)
-
 ### Enabling extensions
 
 In the `Settings` UI (press the `3` key in-game), navigate to the `Extensions` submenu. Click the button there labeled `Enable Extensions`.
@@ -33,18 +29,19 @@ In the `Settings` UI (press the `3` key in-game), navigate to the `Extensions` s
 ![Enable Extensions in the Settings UI](https://firebasestorage.googleapis.com/v0/b/twilioquest-prod.appspot.com/o/docs%2Fenable-extensions.png?alt=media&token=8cc8e5ea-ee56-4a39-ae92-91add950b040)
 
 **IMPORTANT NOTE:** As indicated in the UI, make sure to only use extensions from trusted sources. Like "mods" from other games you may have played before (Minecraft, Skyrim, etc.), a TwilioQuest extension will be able to execute code on your computer. Exercise caution when installing an extension, just as you would using any third-party code on your computer.
-
-Once you have enabled extensions, specify a folder on your computer where you will download and manage extensions. This should be the [full path](https://en.wikipedia.org/wiki/Fully_qualified_name#Filenames_and_paths) to an empty folder on your computer (you should create such a folder first, if you haven't already).
+Once you have enabled extensions, specify a folder on your computer where you will download and manage extensions. This is the folder that contains the parent folder of `images`, `levels`, `objects` and so on, i.e. two levels above these folders. Specify the [full path](https://en.wikipedia.org/wiki/Fully_qualified_name#Filenames_and_paths) to this folder on your computer.
 
 ![Specify a folder path for extensions](https://firebasestorage.googleapis.com/v0/b/twilioquest-prod.appspot.com/o/docs%2Fext-folder.png?alt=media&token=4936dd5c-d84c-459e-9179-4c545a64b297)
 
 Once you have enabled extensions, you should see a listing of automatically-installed "base extensions", and a list of any extensions you have installed yourself.
 
+> Hint: If you don't see that the extension is loaded, hit the "Disable Extensions" button and enable them again.
+
 ### Personalisation for Your Twilio Account
 There are a few bits of code that you need to modify so that the instructions are consistent with your account.
 
-1. Ensure that the TwilioQuest game has your demo account sid and auth token
-2. Change the Whatsapp Join Code in `./levels/vr_mission_template/join_sandbox/description.md`
+1. Ensure that the TwilioQuest game has your demo account sid and auth token. You can do this playing the "Twilio API Setup" training mission from the Fog Owl.
+2. Change the Whatsapp Join Code in `./levels/vr_mission_template/join_sandbox/description.md` to the code from [your console](https://www.twilio.com/console/sms/whatsapp/sandbox).
 
 ## At the Booth
 Here are instructions that should help guide you through the prep to run TQ at the booth.
@@ -52,10 +49,12 @@ Here are instructions that should help guide you through the prep to run TQ at t
 ### Prep
 To run this custom extension at the booth you will need to have 2 or 3 windows open:
 - Window running TwilioQuest, with the Booth Mission already loaded
-- A logged in Twilio Console account open to the [Buy Numbers](https://console.twilio.com/us1/develop/phone-numbers/manage/search?frameUrl=%2Fconsole%2Fphone-numbers%2Fsearch%3Fx-target-region%3Dus1&currentFrameUrl=%2Fconsole%2Fphone-numbers%2Fsearch%3FisoCountry%3DGB%26searchTerm%3D%26searchFilter%3Dleft%26searchType%3Dnumber%26x-target-region%3Dus1%26__override_layout__%3Dembed%26bifrost%3Dtrue) page. *It's useful to prepare address/identity requirements ahead of time or have a number that is already owned in countries that have difficult process for acquiring numbers.*
-- Optional: A logged in Twilio Console account open to the [Twiml Bins](https://console.twilio.com/us1/develop/twiml-bins/twiml-bins?frameUrl=%2Fconsole%2Ftwiml-bins%3Fx-target-region%3Dus1) page. If possible have a TwiML bin ready with a url
+- Use the demo user to log into the Twilio Console and open the [Active Numbers](https://www.twilio.com/console/phone-numbers/) (and buy a number) or the [Buy Numbers](https://www.twilio.com/console/phone-numbers/search) page. 
+  > It's useful to prepare address/identity requirements ahead of time or have a number that is already owned in countries that have difficult process for acquiring numbers.
+- Open the [Twiml Bins](https://www.twilio.com/console/runtime/twiml-bins) page with a prepared TwiML bin ready.
+- Optional: Install a  browser extension like [SessionBuddy](https://chrome.google.com/webstore/detail/session-buddy/edacconmaakjimmfgnblocblbcdcpbko?hl=en) to save the open tabs in case you need to restore them between players.
 
-### PlayThrough
+### Playthrough
 1. When someone starts the game they can play through the first barrier with little guidance.
 
 2. At the second barrier they will need to buy a phone number or find the number you already own. Direct them to switch to the other window where they can do this. When they input the number it will be saved as an environment variable.
