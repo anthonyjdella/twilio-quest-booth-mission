@@ -50,7 +50,23 @@ To run this custom extension at the booth you will need to have 2 or 3 windows o
 - Use the demo user to log into the Twilio Console and open the [Active Numbers](https://www.twilio.com/console/phone-numbers/) (and buy a number) or the [Buy Numbers](https://www.twilio.com/console/phone-numbers/search) page. 
   > It's helpful to prepare address/identity requirements ahead of time or have a number already owned in countries with a difficult process for acquiring numbers.
 - Open the [Twiml Bins](https://www.twilio.com/console/runtime/twiml-bins) page with a prepared TwiML bin ready.
-- Optional: Install a  browser extension like [SessionBuddy](https://chrome.google.com/webstore/detail/session-buddy/edacconmaakjimmfgnblocblbcdcpbko?hl=en) to save the open tabs in case you need to restore them between players.
+- **Optional** Install a  browser extension like [SessionBuddy](https://chrome.google.com/webstore/detail/session-buddy/edacconmaakjimmfgnblocblbcdcpbko?hl=en) to save the open tabs in case you need to restore them between players.
+- **Optional if you pre-purchased a number** Add TwiML responses for incoming calls and messages in case the players want to interact with the demo number. Here are two examples:
+  ```XML
+  <Response>
+    <Say language="de-DE">Twilio sagt "Hallo von der {eventName}"!</Say>
+  </Response>
+  ```
+  and
+  ```XML
+  <Response>
+    <Message>
+        This is the Twilio bot @ {eventName}. Feel free to stop by our booth if you want to learn more.
+    </Message>
+</Response>
+
+
+  ```
 
 ### Playthrough
 1. When someone starts the game, they can play through the first barrier with little guidance.
