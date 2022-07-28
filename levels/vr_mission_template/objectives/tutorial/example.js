@@ -1,5 +1,6 @@
-//Here's the PASSWORD//
+// TODO: Get to know this editor 
+// Find the "Run" button to execute this code to decode it
 
-// I LOVE JAVASCRIPT
+const encodedPassword = "SSBsb3ZlIEphdmFTY3JpcHQ=";
 
-console.log('I LOVE JAVASCRIPT')
+console.log(`The password is: ${atob(encodedPassword)}`)
