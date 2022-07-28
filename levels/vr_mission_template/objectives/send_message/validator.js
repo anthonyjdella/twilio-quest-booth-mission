@@ -12,6 +12,7 @@ module.exports = async helper => {
     if (message.body === 'I wanna dance with somebody!') {
       throw `Don't take our word for it! Change your message body value to your own words!`;
     }
+    const removeMessage = await client.messages(messageSid).remove()
 
     helper.success(`Woohoo! You sent this message: "${message.body}"`);
   } catch (e) {
