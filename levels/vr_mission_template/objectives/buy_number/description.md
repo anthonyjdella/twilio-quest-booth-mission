@@ -9,7 +9,7 @@
   </ul>
 </div>
 
-To complete this challenge, you will need to <strong>obtain a Twilio phone number.</strong> 
+To complete this challenge, you will need to <strong>obtain a Twilio phone number.</strong>
 
 You can find the number in two ways, either in <a href="https://www.twilio.com/console/phone-numbers/incoming">the Twilio console</a> or in the **Code Editor**.
 
