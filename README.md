@@ -1,8 +1,17 @@
 # TwilioQuest Booth Extension
-This short mission of TwilioQuest was designed for Twilio's Devangels to run at booths. A mission takes about 5-7 minutes to complete.
-  
+🕹️ This short mission of TwilioQuest was designed for Twilio's Devangels to run at booths. A mission takes about 5-7 minutes to complete. It is forked from the first iteration repo made by [@nokenwa](https://github.com/nokenwa/twilioQuestBoothExecution).
+
+---
+
+## What's Different with this Version
+1. First & second challenges are much trickier, as they're riddles the user needs to figure out.
+2. If player exits the mission after some doors have gates have been opened, they will reset.
+3. Some menus and instructions are different.
+
+
+
 ## Installing the Extension
-You can install this extension by following the steps in [Enabling Extensions](#enabling-extensions) on their machines and then placing your extension in the folder they specified for extensions.
+You can install this extension by following the steps in [Enabling Extensions](#enabling-extensions).
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -17,6 +26,7 @@ You can install this extension by following the steps in [Enabling Extensions](#
 - [License](#license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
+---
 
 ## Getting Started
 The first step is to enable extensions in the TQ game client.
@@ -38,8 +48,9 @@ Once you have enabled extensions, you should see a listing of automatically-inst
 ### Personalisation for Your Twilio Account
 There are a few bits of code that you need to modify so that the instructions are consistent with your account.
 
-1. Ensure that the TwilioQuest game has your demo account sid and auth token. You can do this by playing the "Twilio API Setup" training mission from the Fog Owl.
-2. Change the WhatsApp Join Code in `./levels/vr_mission_template/join_sandbox/description.md` to the code from [your console](https://www.twilio.com/console/sms/WhatsApp/sandbox).
+Ensure that the TwilioQuest game has your demo account sid and auth token. You can do this by playing the "Twilio API Setup" training mission from the Fog Owl.
+
+---
 
 ## At the Booth
 Here are instructions that should help guide you through the prep to run TQ at the booth.
@@ -47,38 +58,16 @@ Here are instructions that should help guide you through the prep to run TQ at t
 ### Prep
 > Before starting, open the file, `~/Library/Application Support/TwilioQuest/config.json` and add an env file to line 64. The variable name is `TQ_BOOTH_MISSION_PASSCODE` and the value is `Super Secret Passcode`.
 
-To run this custom extension at the booth you will need to have 2 or 3 windows open:
-- Window running TwilioQuest, with the Booth Mission, already loaded
-- Use the demo user to log into the Twilio Console and open the [Active Numbers](https://www.twilio.com/console/phone-numbers/) (and buy a number) or the [Buy Numbers](https://www.twilio.com/console/phone-numbers/search) page. 
-  > It's helpful to prepare address/identity requirements ahead of time or have a number already owned in countries with a difficult process for acquiring numbers.
-- Open the [Twiml Bins](https://www.twilio.com/console/runtime/twiml-bins) page with a prepared TwiML bin ready.
-- **Optional** Install a  browser extension like [SessionBuddy](https://chrome.google.com/webstore/detail/session-buddy/edacconmaakjimmfgnblocblbcdcpbko?hl=en) to save the open tabs in case you need to restore them between players.
-- **Optional if you pre-purchased a number** Add TwiML responses for incoming calls and messages in case the players want to interact with the demo number. Here are two examples:
-  ```XML
-  <Response>
-    <Say language="de-DE">Twilio sagt "Hallo von der {eventName}"!</Say>
-  </Response>
-  ```
-  and
-  ```XML
-  <Response>
-    <Message>
-        This is the Twilio bot @ {eventName}. Feel free to stop by our booth if you want to learn more.
-    </Message>
-</Response>
-
-
-  ```
+I think it's best not to have multiple windows running, just TQ with this Booth Mission already loaded.
 
 ### Playthrough
-1. When someone starts the game, they can play through the first barrier with little guidance.
+1. The first barrier is a riddle that isn't obvious at first glace. Watch the behavior of the player and assist them as needed.
 
-2. At the second barrier, they will need to buy a phone number or find the number you already own. Please direct them to switch to the other window where they can do this. When they input the number, it will be saved as an environment variable.
+2. At the second barrier, they will need to buy a phone number or find the number you already own. Please direct them to the code editor where they will see another riddle. This one also isn't obvious, so please help as needed.
 
-3. After this, they will have three choices;
-    * SMS Message: Turn Right; They will have to add a `to` and `body` parameter and send a message to themselves. 
+3. After this, they will have two choices:
+    * SMS Message: Turn Right; They will have to add a `to` and `body` parameter and send a message to themselves.
     * Phone Call: Turn Left; They will have to add a `to` and `url`. For the URL direct them to the TwiML bin page, where they can edit the TwiML Bin to Say what they would like.
-    * WhatsApp: Head straight up; They will have to join the sandbox associated with whatever account you are using. They can then send a WhatsApp message to themselves on the second mission.
 
 4. Once they have completed the mission, they can open the chest. In the future, this will increment a counter to keep a count of the missions completed. To reset the game, simply walk through the exit at the top of the screen. This will reload the mission with all the code, and the barriers reset.
 
