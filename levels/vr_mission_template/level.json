@@ -1,12 +1,12 @@
 {
-  "title": "Twilio Quest Booth Mission",
-  "description": "This is a mission that will help you make your first Twilio Quest API Requests",
-  "questTitle": "Twilio Quest Booth Mission",
-  "questDescription": "Twilio Quest at the Booth! Win a piece of Swag",
+  "title": "Booth Mission",
+  "description": "Earn SWAG by completing a mission",
+  "questTitle": "Win SWAG",
+  "questDescription": "Complete a mission to win Twilio SWAG",
   "mission_icon": "mission_icon.png",
   "is_mission": true,
   "priority": 10,
-  "backgroundMusic": "hackertheme_104771b",
+  "backgroundMusic": "unsettlingarea_59895b",
   "backgroundEffect": {
     "key": "vr",
     "options": {}
