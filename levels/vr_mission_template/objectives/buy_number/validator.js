@@ -4,7 +4,7 @@ module.exports = async function (helper) {
   console.log(phoneNumber)
 
   if (!phoneNumber) {
-    return helper.fail(`Please provide a phone number in your account.`);
+    return helper.fail(`Please enter a Twilio phone number.`);
   }
 
   let c;
@@ -17,8 +17,7 @@ module.exports = async function (helper) {
 
   function respondWithError() {
     helper.fail(`
-      We couldn't find your phone number - please try again, and make sure 
-      your phone number and Twilio credentials are correct.
+      We couldn't find your phone number - please try again! Check the Help tab for a tip.
     `);
   }
 

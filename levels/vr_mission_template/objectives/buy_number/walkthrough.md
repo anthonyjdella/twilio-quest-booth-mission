@@ -1,5 +1,5 @@
-# The "Help" Tab
+# Zero-based Index
 
-We may remove this tab and content in the future, but in the current iteration of TwilioQuest, this is where you would put more hand-holdy content intended to guide the player through what needed to be done.
+This time, executing the program won't log the phone number. Remember, in Javascript, array's are <a href="https://en.wikipedia.org/wiki/Zero-based_numbering">zero-indexed</a>.
 
-We find that what works better is linking to external resources on the web, rather than recreatign a tutorial here.
+Ask the Twilio booth representative for help.

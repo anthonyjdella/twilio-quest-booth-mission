@@ -1,15 +1,16 @@
 {
-  "title": "Buy A Twilio Number",
-  "description": "Enter your Twilio phone number, in E.164 format:",
-  "validation_fields": [
-    {
-      "name": "twilioNumber",
-      "type": "text",
-      "placeholder": "+16518675309",
-      "label": "Enter your Twilio phone number, in E.164 format:"
+    "title": "Get A Twilio Number",
+    "description": "Enter your <strong>Twilio phone number</strong>.",
+    "show_ide": true,
+    "validation_fields": [
+        {
+            "name": "twilioNumber",
+            "type": "text",
+            "placeholder": "+16518675309",
+            "label": "Twilio Phone Number"
+        }
+    ],
+    "rewards": {
+        "xp": 100
     }
-  ],
-  "rewards": {
-    "xp": 100
-  }
 }
