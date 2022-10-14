@@ -1,24 +1,20 @@
-
-
 # Learning the Hack Interface
 
 <div class="aside">
-<h3>To-Do List</h3>
-<ul>
-  <li>Open Code Editor</li>
-  <li>Run the code to log the secret passcode</li>
-  <li>Enter the passcode in the field on the right, then click <em>HACK</em>.</li>
-</ul>
+  <h3>To-Do List</h3>
+  <ul>
+    <li>Show Code Editor</li>
+    <li>Run the code to log the secret passcode</li>
+    <li>Enter the passcode in the field on the right, then click <em>HACK</em>.</li>
+  </ul>
 </div>
-<p>
-To complete this challenge, you must **Open the Code Editor and find the Passcode**.
-</p>
-<p>
-Type the passcode into the text field on the right and click *HACK* to bring down the laser barrier.
-</p>
-<p>
-Don't try and guess. You probably won't get it correct
-</p>
+
+Successfully hacking these terminals will lower the laser barriers. Once a mission is completed, you'll earn your reward: <b>FREE SWAG</b>
+
+To complete this challenge, you must <b>Show the Code Editor</b> and <b>find the Passcode</b>.
+
+Type the passcode into the text field on the right and click <b>HACK</b> to bring down the laser barrier.
+
 <style>
 .passcode {
   color: #eee;

@@ -1,13 +1,13 @@
 {
-  "title": "Hacking Interface Basics",
-  "description": "Using the <strong>Coding Editor</strong>, you can hack bypass obstacles like this laser barrier.",
+  "title": "Get Started",
+  "description": "Find your <strong>Objective</strong>, which provides information on how to hack obstacles like this laser barrier.",
   "show_ide":true,
   "validation_fields": [
     {
       "name": "passcode",
       "type": "text",
-      "placeholder": "ENTER PASSCODE HERE",
-      "label": "Once you open the code editor, you will be able to find a secret passcode. Enter that passcode here:"
+      "placeholder": "type the passcode here",
+      "label": "Passcode"
     }
   ],
   "rewards": {

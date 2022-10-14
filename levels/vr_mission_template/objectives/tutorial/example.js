@@ -1,6 +1,12 @@
-// TODO: Get to know this editor 
-// Find the "Run" button to execute this code to decode it
+/***************************************************************
+    This mission uses the Javascript programming language.
 
-const encodedPassword = "SSBsb3ZlIEphdmFTY3JpcHQ=";
+    Run this program by clicking the Play button.
+***************************************************************/
 
-console.log(`The password is: ${atob(encodedPassword)}`)
+
+const correctPasscode = process.env.TQ_BOOTH_MISSION_PASSCODE;
+
+
+(!"This is the passcode: ")  ?  console.log("password123") :
+                                console.log(correctPasscode);

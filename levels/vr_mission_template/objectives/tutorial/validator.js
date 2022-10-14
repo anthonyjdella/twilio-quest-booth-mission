@@ -4,13 +4,15 @@ module.exports = async function (helper) {
   console.log(`You entered: ${input}`)
 
   if (!input) {
-    return helper.fail(`Please find the passcode in the code editor.`);
-  } else if (input.toLowerCase() === 'i love javascript'){
+    return helper.fail(
+        `Please find the passcode in the code editor. There, try clicking on the Play button.`
+    );
+  } else if (input.toLowerCase() === 'super secret passcode'){
     return helper.success(
       `You enter the passcode needed to bypass the lasers. Soon after, the lasers
-      retract and clear your path forward.`
+      retract and clear your path forward.dw`
     )
   } else return helper.fail(
-    'Passcode not recognized. Please find the passcode in the code editor.'
-  )
+      "Passcode not recognized. Please find the passcode in the code editor. There, try clicking on the Play button."
+  );
 };
