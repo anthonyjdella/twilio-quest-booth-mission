@@ -1,7 +1,7 @@
 
 {
   "title": "Congratulations! You have won a swag Item",
-  "description": "Pick a piece of swag from our wonderful collection",
+  "description": "Pick a piece of <strong>swag</strong> from our wonderful collection!",
   "validation_fields": [],
   "rewards": {
     "xp": 0,
