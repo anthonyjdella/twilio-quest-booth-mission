@@ -1,13 +1,13 @@
 {
   "title": "Messaging Fundamentals: Send a Text Message",
-  "description": "Send your first SMS message using the Twilio API.",
+  "description": "Send a text message using the <strong>Twilio SMS API</strong>.",
   "show_ide": true,
   "validation_fields": [
     {
       "name": "messageSid",
       "type": "text",
-      "placeholder": "SMXXXX",
-      "label": "Enter the message SID of a message sent from your account:"
+      "placeholder": "SMXXXXXXXX",
+      "label": "SID"
     }
   ],
   "rewards": {
