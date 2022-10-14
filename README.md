@@ -45,6 +45,8 @@ There are a few bits of code that you need to modify so that the instructions ar
 Here are instructions that should help guide you through the prep to run TQ at the booth.
 
 ### Prep
+> Before starting, open the file, `~/Library/Application Support/TwilioQuest/config.json` and add an env file to line 64. The variable name is `TQ_BOOTH_MISSION_PASSCODE` and the value is `Super Secret Passcode`.
+
 To run this custom extension at the booth you will need to have 2 or 3 windows open:
 - Window running TwilioQuest, with the Booth Mission, already loaded
 - Use the demo user to log into the Twilio Console and open the [Active Numbers](https://www.twilio.com/console/phone-numbers/) (and buy a number) or the [Buy Numbers](https://www.twilio.com/console/phone-numbers/search) page. 
