@@ -13,3 +13,5 @@ const phoneNumbers = [
 ]
 
 "This is the correct phone number: " + phoneNumbers[2+1];
+
+console.log("Which option is the correct phone number?");
