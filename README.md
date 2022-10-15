@@ -3,21 +3,13 @@
 
 ---
 
-## What's Different with this Version
-1. First & second challenges are much trickier, as they're riddles the user needs to figure out.
-2. If the player exits the mission after barriers have been lowered, they will reset.
-3. Updated titles, menus, and instructions.
-4. Voice Call challenge no longer uses a TwiML bin URL. Instead, players just enter the TwiML directly.
-5. Fixed a bug where the code editor was not resetting.
-
-
-
-## Installing the Extension
-You can install this extension by following the steps in [Enabling Extensions](#enabling-extensions).
-
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
+## Contents
+
+- [What's Different with this Version?](#what-is-different-with-this-version)
+- [Installing the Extension](#installing-the-extension)
 - [Getting Started](#getting-started)
   - [Enabling extensions](#enabling-extensions)
   - [Personalisation for Your Twilio Account](#personalisation-for-your-twilio-account)
@@ -28,6 +20,21 @@ You can install this extension by following the steps in [Enabling Extensions](#
 - [License](#license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+---
+
+## What is Different with this Version?
+1. First & second challenges are much trickier, as they're riddles the user needs to figure out.
+2. If the player exits the mission after barriers have been lowered, they will reset.
+3. Updated titles, menus, and instructions.
+4. Voice Call challenge no longer uses a TwiML bin URL. Instead, players just enter the TwiML directly.
+5. Fixed a bug where the code editor was not resetting.
+
+---
+
+## Installing the Extension
+You can install this extension by following the steps in [Enabling Extensions](#enabling-extensions).
+
 ---
 
 ## Getting Started
