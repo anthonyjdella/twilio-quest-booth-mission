@@ -5,8 +5,10 @@
 
 ## What's Different with this Version
 1. First & second challenges are much trickier, as they're riddles the user needs to figure out.
-2. If player exits the mission after some doors have gates have been opened, they will reset.
-3. Some menus and instructions are different.
+2. If the player exits the mission after barriers have been lowered, they will reset.
+3. Updated titles, menus, and instructions.
+4. Voice Call challenge no longer uses a TwiML bin URL. Instead, players just enter the TwiML directly.
+5. Fixed a bug where the code editor was not resetting.
 
 
 
@@ -74,6 +76,7 @@ I think it's best not to have multiple windows running, just TQ with this Booth 
 ## Future To-Do List
 - [ ] Create an automated counter for how many times each mission has been completed
 - [ ] Create an embedded form for people to submit job title, company, and email to win prizes
+- [ ] Reset user code after each playthrough
 
 ## License
 [This template](https://github.com/TwilioQuest/twilioquest-extension-template) is open source under the MIT license.
