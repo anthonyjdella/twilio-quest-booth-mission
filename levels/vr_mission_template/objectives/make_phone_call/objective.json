@@ -1,13 +1,13 @@
 {
   "title": "Voice Fundamentals: Make a Phone Call",
-  "description": "Make your first Phone Call using the Twilio API.",
+  "description": "Make a phone call using the <strong>Twilio Voice API</strong>.",
   "show_ide": true,
   "validation_fields": [
     {
       "name": "callSid",
       "type": "text",
-      "placeholder": "CAXXXX",
-      "label": "Enter the call SID of a call made from your account:"
+      "placeholder": "CAXXXXXXXX",
+      "label": "Call SID"
     }
   ],
   "rewards": {
