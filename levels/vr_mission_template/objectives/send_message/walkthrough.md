@@ -1,6 +1,6 @@
 ## What information do I need to send an SMS message?
 
-When making an API request to Twilio, in addition to passing along our authentication credentials, we need to provide at least three parameters:
+When making an SMS API request to Twilio, in addition to passing along our authentication credentials, we need to provide at least three parameters:
 
 - **Body:** The actual text of the message we want to send.
 - **To:** The phone number you want to send the message to.
