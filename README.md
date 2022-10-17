@@ -33,6 +33,7 @@
 5. Fixed a bug where the code editor was not resetting.
 6. Revamp the map with a new terrain.
 7. Add NPCs with dialog to make the experience more interactive.
+8. Replaced the WhatsApp mission with a Video challenge. Because there aren't many WhatsApp users in the US.
 
 ---
 
