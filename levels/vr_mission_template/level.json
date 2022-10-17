@@ -14,5 +14,5 @@
   "flavorTextOverrides": {
     "bookshelf": "There's nothing like a good book."
   },
-  "objectives": ["tutorial","buy_number","send_message","reply_message","make_phone_call","join_sandbox","send_whatsapp", "swag_chest"]
+  "objectives": ["tutorial","buy_number","send_message","reply_message","make_phone_call","join_room", "swag_chest"]
 }

@@ -14,8 +14,7 @@ async function reset(event, world, worldState) {
     world.removeObjective("vr_mission_template", "buy_number");
     world.removeObjective("vr_mission_template", "send_message");
     world.removeObjective("vr_mission_template", "make_phone_call");
-    world.removeObjective("vr_mission_template", "send_whatsapp");
-    world.removeObjective("vr_mission_template", "join_sandbox");
+    world.removeObjective("vr_mission_template", "join_room");
     world.removeObjective("vr_mission_template", "swag_chest");
 
     //RESET USER CODE

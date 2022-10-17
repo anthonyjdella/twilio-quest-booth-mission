@@ -1,0 +1,16 @@
+{
+  "title": "Video: Create Programmable Video Chats",
+  "description": "Create your own <strong>video chat application</strong> using Twilio Video!",
+  "show_ide": true,
+  "validation_fields": [
+    {
+      "name": "messageSid",
+      "type": "text",
+      "placeholder": "SMXXXXXXXX",
+      "label": "SID"
+    }
+  ],
+  "rewards": {
+    "xp": 100
+  }
+}
