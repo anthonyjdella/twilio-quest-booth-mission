@@ -1,0 +1,91 @@
+conversation(display_name="Twilio Instructor")
+  case lastResponse
+    when "is_it_free"
+      statement#yes_its_free
+    when "what_does_it_teach"
+      statement#coding
+    when "how_can_i_download"
+      statement#download
+    when "what_products"
+      statement#products
+    when "are_you_gaming"
+      statement#gaming
+    when "no"
+      statement#sad
+      responses
+
+    when "what_is_this"
+      statement#intro
+      responses
+        response#is_it_free.
+          Is it free?!
+        response#what_does_it_teach.
+          What's it teach?
+        response#how_can_i_download.
+          How can I download it?
+    
+    when "what_should_i_do"
+        statement#play
+
+    when "can_i_get_swag"
+        statement#swag
+        responses
+          response#ok.
+            Ok!
+          response#no.
+            No thanks
+
+    when "whats_a_twilio"
+        statement#twilio
+        responses
+          response#what_products.
+            What products do you have?
+          response#are_you_gaming.
+            Are you a gaming company?
+
+    default
+      statement#default
+      responses
+        response#what_is_this.
+          What is this game about?
+        response#what_should_i_do.
+          What should I do?
+        response#can_i_get_swag.
+          Can I have some swag?
+        response#whats_a_twilio.
+          What's a Twilio?
+
+  statements
+    statement#default
+      text.
+        Welcome to our #[span.highlight Twilio Booth!] Complete this mission to #[span.highlight win Swag!]
+    statement#intro
+      text.
+        This is #[span.highlight TwilioQuest], an educational video game designed to teach a new generation of developers how to change the world with code.
+    statement#download
+      text.
+        Visit #[span.highlight www.twilio.com/quest] to download it for free!
+    statement#yes_its_free
+      text.
+        #[span.highlight Yes], it's completely free!
+    statement#coding
+      text.
+        #[span.highlight TwilioQuest] prepares you for real-world programming by helping you configure a local development environment and introducing tools used by professional programmers around the world. From learning how to use your terminal, to coding in Python, JavaScript, and contributing to Open Source projects, TwilioQuest will help you develop practical engineering skills.
+    statement#play
+      text.
+        #[span.highlight Continue through the VR hall and complete a mission]. You'll win swag an learn about Twilio!
+    statement#swag
+      text.
+        Absolutely! But you'll have to #[span.highlight complete a mission] first.
+    statement#twilio
+      text.
+        #[span.highlight Twilio] is a customer engagement platform used by hundreds of thousands of businesses and more than ten million developers worldwide to build unique, personalized experiences for their customers.
+    statement#products
+      text.
+        SMS, Voice, Video, and Chat APIs are just a few of the products we offer. #[span.highlight Visit our website] to learn more.
+    statement#gaming
+      text.
+        No, we created #[span.highlight TwilioQuest] as a fun way educate a new generation of developer!
+    statement#sad
+      text.
+        :(
