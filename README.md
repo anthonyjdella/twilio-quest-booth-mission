@@ -83,7 +83,11 @@ I think it's best not to have multiple windows running, just TQ with this Booth 
 ## Future To-Do List
 - [ ] Create an automated counter for how many times each mission has been completed
 - [ ] Create an embedded form for people to submit job title, company, and email to win prizes
-- [ ] Reset user code after each playthrough
+- [x] Reset user code after each playthrough
+- [ ] Add name of conference
+- [ ] Display large sign that says "Win swag play completing a mission"
+- [ ] Add NPC with dialog
+- [ ] Reskin the map
 
 ## License
 [This template](https://github.com/TwilioQuest/twilioquest-extension-template) is open source under the MIT license.
