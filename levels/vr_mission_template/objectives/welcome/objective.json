@@ -1,0 +1,11 @@
+{
+    "title": "SPACE",
+    "description": "Push <strong>SPACE</strong> to interact with objects.",
+    "show_ide": false,
+    "validation_fields": [    {
+        "isOpen": "false"
+    }],
+    "rewards": {
+        "xp": 0
+    }
+}
