@@ -12,22 +12,33 @@ conversation(display_name="Cedric")
           Nice to meet you!
         response#you_seem_nice.
           You seem nice!
+    
+    when "what_next"
+      statement#cedric2
+      responses
+        response#ok.
+          Ok, great!
+        response#thanks.
+          Thank you!
 
     default
       statement#default
       responses
         response#who_are_you.
           Hello, who are you?
+        response#what_next.
+          What should I do next?
 
   statements
     statement#default
       text.
-        Welcome aboard the #[span.highlight Fog Owl!]
-      speech.
-        Welcome aboard the #[break(strength="medium")] Fog Owl!
+        #[span.highlight Continue to the terminal] and bring down the laser barriers.
     statement#cedric
       text.
         I am Cedric, your Cloud navigational assistant!
     statement#final
       text.
         Thank you! Now get exploring!
+    statement#cedric2
+      text.
+        Walk up to the terminal, press the #[span.highlight SPACE] button, and bring down the laser barriers.
