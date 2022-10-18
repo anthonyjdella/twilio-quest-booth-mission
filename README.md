@@ -79,7 +79,7 @@ Here are instructions that should help guide you through the prep to run TQ at t
 
 > Before starting, open the file, `~/Library/Application Support/TwilioQuest/config.json` and add an env file to line 64. The variable name is `TQ_BOOTH_MISSION_PASSCODE` and the value is `Super Secret Passcode`.
 
-> There is a book on the floor near the entrance. When opened, it launches an iFrame which directs to a URL (localhost:3000). To make this work, you need to have another application running on localhost:300. Clone the following React application, npm install, npm run start and leave it running. For each conference you attend, you can edit this project by changing the name of the conference you're attending.
+> There is a book on the floor near the entrance. When opened, it launches an iFrame which directs to a URL (localhost:3000). To make this work, you need to have another application running on localhost:300. Clone the following [React application](https://github.com/anthonyjdella/iframe-twilio-quest-booth-mission), npm install, npm run start and leave it running. For each conference you attend, you can edit this project by changing the name of the conference you're attending.
 
 I think it's best not to have multiple windows running, just TQ with this Booth Mission already loaded.
 
