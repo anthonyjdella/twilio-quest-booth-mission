@@ -8,7 +8,7 @@ When making a Call API request to Twilio, in addition to passing along our authe
 
 ## What is TwiML?
 
-TwiML is Twilio's markup language (like XML). Here's an example of how you can use TwiML to say something: <Response><Say>Ahoy, hello world!</Say></Response>
+TwiML is Twilio's markup language (like XML). Here's an example of how you can use TwiML to say something: `<Response><Say>Ahoy, hello world!</Say></Response>`
 
 ## Check Your Formatting!
 

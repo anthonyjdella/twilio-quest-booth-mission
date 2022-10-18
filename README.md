@@ -36,6 +36,7 @@
 8. Replaced the WhatsApp mission with a Video challenge. Because there aren't many WhatsApp users in the US.
 9. Added a counter to each mission/challenge which increments each time one is completed. Now we know how many people have completed each area!
 10. Added an iFrame that shows the name of the conference (needs to be updated each time). This is a seperate project that needs to run on localhost:3000.
+11. Added an Easter Egg, if the player explores the map they can win swag by finding the secret station!
 
 ---
 

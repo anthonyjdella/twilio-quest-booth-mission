@@ -36,6 +36,21 @@ module.exports = function (event, world) {
         });
     }
 
+    if (event.name === "playerDidInteract" && event.target.name == "book2") {
+        world.showNotification(
+            "Curiosity and Exploration are important traits to have. Look around the map for a hidden station to earn Swag."
+        );
+    }
+
+    if (
+        event.name === "triggerAreaWasEntered" &&
+        event.target.name == "secret"
+    ) {
+        world.showNotification(
+            "Congrats! You found the secret station and earned some Swag!"
+        );
+    }
+
     if (event.name === "objectiveCompleted" && event.objective === "tutorial") {
         if (counter1 == null) {
             localStorage.setItem("counter1", 1);
