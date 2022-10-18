@@ -131,6 +131,13 @@ module.exports = function (event, world) {
         );
     }
 
+    if (
+        event.name === "triggerAreaWasEntered" &&
+        event.target.name == "devMode"
+    ) {
+        world.warp("vr_mission_template", "player_entry_dev", "default");
+    }
+
     world.setState(counter1);
     world.setState(counter2);
     world.setState(counter3);

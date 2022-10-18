@@ -37,6 +37,7 @@
 9. Added a counter to each mission/challenge which increments each time one is completed. Now we know how many people have completed each area!
 10. Added an iFrame that shows the name of the conference (needs to be updated each time). This is a seperate project that needs to run on localhost:3000.
 11. Added an Easter Egg, if the player explores the map they can win swag by finding the secret station!
+12. Dev mode! If you walk between the tree trunk and boulder under the Twilio instructor, you will enter dev mode and be teleported into the API missions (bypassing the first 2 challenges).
 
 ---
 
