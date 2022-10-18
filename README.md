@@ -26,14 +26,16 @@
 
 ## What is Different with this Version?
 
-1. First & second challenges are much trickier, as they're riddles the user needs to figure out.
-2. If the player exits the mission after barriers have been lowered, they will reset.
+1. First & second challenges are much trickier, as they're coding riddles the user needs to figure out.
+2. If the player exits the mission after any barrier has been lowered, they will reset.
 3. Updated titles, menus, and instructions.
 4. Voice Call challenge no longer uses a TwiML bin URL. Instead, players just enter the TwiML directly.
 5. Fixed a bug where the code editor was not resetting.
-6. Revamp the map with a new terrain.
-7. Add NPCs with dialog to make the experience more interactive.
+6. Revamp the map with an all new terrain.
+7. Added 2 NPCs with dialog to make the experience more interactive.
 8. Replaced the WhatsApp mission with a Video challenge. Because there aren't many WhatsApp users in the US.
+9. Added a counter to each mission/challenge which increments each time one is completed. Now we know how many people have completed each area!
+10. Added an iFrame that shows the name of the conference (needs to be updated each time). This is a seperate project that needs to run on localhost:3000.
 
 ---
 
@@ -77,28 +79,31 @@ Here are instructions that should help guide you through the prep to run TQ at t
 
 > Before starting, open the file, `~/Library/Application Support/TwilioQuest/config.json` and add an env file to line 64. The variable name is `TQ_BOOTH_MISSION_PASSCODE` and the value is `Super Secret Passcode`.
 
+> There is a book on the floor near the entrance. When opened, it launches an iFrame which directs to a URL (localhost:3000). To make this work, you need to have another application running on localhost:300. Clone the following React application, npm install, npm run start and leave it running. For each conference you attend, you can edit this project by changing the name of the conference you're attending.
+
 I think it's best not to have multiple windows running, just TQ with this Booth Mission already loaded.
 
 ### Playthrough
 
-1. The first barrier is a riddle that isn't obvious at first glace. Watch the behavior of the player and assist them as needed.
+1. The first barrier is a riddle that isn't obvious at first glace. Watch the behavior of the player and assist them as needed. Many people will think the passcode is `passcode123` but in order to see the actual password, they need to execute the program and fetch the value, which is stored as an ENV variable. The correct passcode is `Super Secret Passcode`.
 
-2. At the second barrier, they will need to buy a phone number or find the number you already own. Please direct them to the code editor where they will see another riddle. This one also isn't obvious, so please help as needed.
+2. At the second barrier, they will need to find the Twilio number you already own. Please direct them to the code editor where they will see another riddle. This one also isn't obvious, so please help as needed. It says `2+1` which is 3. So many people will think it's the 3rd phone number. But since this is an array (with index 0), the correct answer is option 4, or phone number `940-394-8137`.
 
-3. After this, they will have two choices:
+3. After this, they will have three choices:
 
     - SMS Message: Turn Right; They will have to add a `to` and `body` parameter and send a message to themselves.
-    - Phone Call: Turn Left; They will have to add a `to` and `url`. For the URL direct them to the TwiML bin page, where they can edit the TwiML Bin to Say what they would like.
+    - Phone Call: Turn Left; They will have to add a `to` and `twiml` parameter and call themselves. For the TwiML, ask them to fill in the TwiML. Let them know that TwiML is Twilio's Markup Language. It starts with a `<Response><Say>Enter some message here</Say></Response>`.
+    - Video Chat: Go Straight; They will have to fill in their number in the `to` parameter. After executing, a link will be sent via text. Have them open the link and join a video chat room. You can also open the same link on the display so you can live chat in real time.
 
-4. Once they have completed the mission, they can open the chest. In the future, this will increment a counter to keep a count of the missions completed. To reset the game, simply walk through the exit at the top of the screen. This will reload the mission with all the code, and the barriers reset.
+4. Once they have completed the mission, they can open the chest. This will increment a counter to keep a count of the missions completed. To reset the game, simply walk through the exit at the top of the screen. This will reload the mission with all the code, and the barriers reset.
 
 ## Future To-Do List
 
--   [ ] Create an automated counter for how many times each mission has been completed
+-   [x] Create an automated counter for how many times each mission has been completed
 -   [ ] Create an embedded form for people to submit job title, company, and email to win prizes
 -   [x] Reset user code after each playthrough
--   [ ] Add name of conference
--   [ ] Display large sign that says "Win swag play completing a mission"
+-   [x] Add name of conference
+-   [x] Display large sign that says "Win swag play completing a mission"
 -   [x] Add NPC with dialog
 -   [x] Reskin the map
 
