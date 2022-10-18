@@ -12,6 +12,6 @@
     },
     "_moduleAliases": {
         "@root": ".",
-        "@twilio": "/Users/anthonyjdella/Desktop/Twilio-Quest/twilioQuestBoothExecution/node_modules/twilio/lib/index.js"
+        "@twilio": "/Users/anthonyjdella/Desktop/Twilio-Quest/Extensions/twilioQuestBoothExecution/node_modules/twilio/lib/index.js"
     }
 }
