@@ -1,18 +1,16 @@
 # Get Some Digits
 
 <div class="aside">
-  <h3>Options</h3>
+  <h3>To-Do List</h3>
   <ul>
-    <li>Look in the <a href="https://www.twilio.com/console/phone-numbers/incoming">Twilio Console</a></li>
-    <li>Look in the <strong>Code Editor</strong></li>
-    <li><a href="https://support.twilio.com/hc/en-us/articles/223135247-How-to-Search-for-and-Buy-a-Twilio-Phone-Number-from-Console">Buy a Twilio number</a></li>
+    <li>Show the <strong>Code Editor</strong></li>
+    <li>Find the correct phone number</li>
+    <li>Enter the number in the field on the right, then click <em>HACK</em>.</li>
   </ul>
 </div>
 
-To complete this challenge, you will need to <strong>obtain a Twilio phone number.</strong>
+To complete this challenge, you will need to <strong>find the correct Twilio phone number.</strong>
 
-You can find the number in two ways, either in <a href="https://www.twilio.com/console/phone-numbers/incoming">the Twilio console</a> or in the **Code Editor**.
+Find the number in the **Code Editor** by solving the coding riddle.
 
-You can also use a new number by <a href="https://support.twilio.com/hc/en-us/articles/223135247-How-to-Search-for-and-Buy-a-Twilio-Phone-Number-from-Console">buying a Twilio number</a>.
-
-<!-- Once you have secured a phone number, enter it in <a href="https://www.twilio.com/docs/glossary/what-e164" >E.164 format </a> on the right. The validator will be very picky about this format, so use it exactly! For example, the US phone number "(651) 867-5309" would need to be entered as `+16518675309`. -->
+Enter the phone number in the text field, then click <em>HACK</em>.
