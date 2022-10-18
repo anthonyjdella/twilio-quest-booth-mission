@@ -3,6 +3,14 @@ conversation(display_name="Cedric")
     when "nice_to_meet"
     when "you_seem_nice"
       statement#final
+    when "1"
+      statement#hardware
+    when "2"
+      statement#hardware
+    when "3"
+      statement#hardware
+    when "4"
+      statement#hardware
       responses
 
     when "who_are_you"
@@ -21,6 +29,18 @@ conversation(display_name="Cedric")
         response#thanks.
           Thank you!
 
+    when "tell_me_a_joke"
+      statement#joke
+      responses
+        response#1.
+          01?
+        response#2.
+          1
+        response#3.
+          0
+        response#4.
+          True
+
     default
       statement#default
       responses
@@ -28,6 +48,8 @@ conversation(display_name="Cedric")
           Hello, who are you?
         response#what_next.
           What should I do next?
+        response#tell_me_a_joke.
+          Tell me a joke.
 
   statements
     statement#default
@@ -42,3 +64,9 @@ conversation(display_name="Cedric")
     statement#cedric2
       text.
         Walk up to the terminal, press the #[span.highlight SPACE] button, and bring down the laser barriers.
+    statement#joke
+      text.
+        How many programmers does it take to change a light bulb?
+    statement#hardware
+      text.
+        None, its a hardware problem.
