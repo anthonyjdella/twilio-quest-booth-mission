@@ -108,6 +108,8 @@ I think it's best not to have multiple windows running, just TQ with this Booth 
 -   [x] Display large sign that says "Win swag play completing a mission"
 -   [x] Add NPC with dialog
 -   [x] Reskin the map
+-   [ ] Create a custom character (me) in Pixel Art
+-   [ ] Add a phone on the map which makes a phone call on interacts
 
 ## License
 
