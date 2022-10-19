@@ -11,6 +11,10 @@ conversation(display_name="Cedric")
       statement#hardware
     when "4"
       statement#hardware
+    when "5"
+      statement#arrays
+    when "6"
+      statement#arrays
       responses
 
     when "who_are_you"
@@ -41,6 +45,14 @@ conversation(display_name="Cedric")
         response#4.
           True
 
+    when "tell_me_a_joke_2"
+      statement#joke2
+      responses
+        response#5.
+          Bad boss?
+        response#6.
+          Bad code?
+
     default
       statement#default
       responses
@@ -50,6 +62,8 @@ conversation(display_name="Cedric")
           What should I do next?
         response#tell_me_a_joke.
           Tell me a joke.
+        response#tell_me_a_joke_2.
+          Tell me another joke.
 
   statements
     statement#default
@@ -70,3 +84,9 @@ conversation(display_name="Cedric")
     statement#hardware
       text.
         None, its a hardware problem.
+    statement#joke2 
+      text.
+        Why did the programmer quit his job?
+    statement#arrays
+      text.
+        Because he didn't get arrays.
