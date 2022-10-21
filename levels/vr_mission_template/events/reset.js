@@ -5,7 +5,7 @@ async function reset(event, world, worldState) {
     )}/QuestIDE/${world.getCurrentLevelName()}`;
     const sampleCodeFolder = `${
         world.getContext().extensions.directory
-    }/twilioQuestBoothExecution/levels/vr_mission_template/objectives`;
+    }/twilio-quest-booth-mission/levels/vr_mission_template/objectives`;
     const fs = require("fs");
 
     console.log("Wiping Memory");

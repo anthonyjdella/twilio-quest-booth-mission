@@ -30,10 +30,12 @@ module.exports = function (event, world) {
             props: {
                 url:
                     "http://localhost:3000/" +
-                    event.target.iFramePathName +
                     "?embedded=true",
             },
         });
+        console.log(
+            "http://localhost:3000/" + "?embedded=true"
+        );
     }
 
     if (event.name === "playerDidInteract" && event.target.name == "book2") {
