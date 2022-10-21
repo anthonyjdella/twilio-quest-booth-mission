@@ -3,7 +3,7 @@
 
     Run this program by clicking the Play button.
 ***************************************************************/
-require("/Users/anthonyjdella/Desktop/Twilio-Quest/Extensions/twilioQuestBoothExecution/node_modules/module-alias/register");
+require("/Users/anthonyjdella/Desktop/Twilio-Quest/Extensions/twilio-quest-booth-mission/node_modules/module-alias/register");
 
 const twilio = require("@twilio");
 const client = twilio(
