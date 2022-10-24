@@ -81,7 +81,43 @@
                  "value":true
                 }],
          "type":"globe"
-        }],
+        },
+       {
+           "id": 2,
+           "image": "",
+           "imageheight": 24,
+           "imagewidth": 24,
+           "objectgroup": {
+               "draworder": "index",
+               "name": "",
+               "objects": [
+                   {
+                       "height": 5,
+                       "id": 1,
+                       "name": "",
+                       "rotation": 0,
+                       "type": "",
+                       "visible": true,
+                       "width": 9,
+                       "x": 7,
+                       "y": 16
+                   }
+               ],
+               "opacity": 1,
+               "type": "objectgroup",
+               "visible": true,
+               "x": 0,
+               "y": 0
+           },
+           "properties": [
+               {
+                   "name": "ghost",
+                   "type": "string",
+                   "value": "ghost"
+               }
+           ],
+           "type": "ghost2"
+       }],
  "tilewidth":24,
  "type":"tileset",
  "version":"1.6"

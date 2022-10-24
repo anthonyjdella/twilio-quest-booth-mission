@@ -38,6 +38,16 @@ module.exports = function (event, world) {
         );
     }
 
+    if (event.name === "playerDidInteract" && event.target.name == "ghost") {
+        world.showOverlayComponent({
+            key: "iframe",
+            props: {
+                url: "http://localhost:3000/scary" + "?embedded=true",
+            },
+        });
+        console.log("http://localhost:3000/scary" + "?embedded=true");
+    }
+
     if (event.name === "playerDidInteract" && event.target.name == "book2") {
         world.showNotification(
             "Curiosity and Exploration are important traits to have. Look around the map for a hidden station to earn Swag."

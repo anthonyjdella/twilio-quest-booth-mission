@@ -545,7 +545,7 @@
                  "y":1330.17178933378
                 }, 
                 {
-                 "gid":11019,
+                 "gid":11020,
                  "height":32,
                  "id":199,
                  "name":"instructor",
@@ -568,7 +568,7 @@
                  "y":1250.20767569364
                 }, 
                 {
-                 "gid":11020,
+                 "gid":11021,
                  "height":32,
                  "id":202,
                  "name":"cedric",
@@ -738,6 +738,24 @@
                  "width":19.8852772466539,
                  "x":673.804971319312,
                  "y":1427.15105162524
+                }, 
+                {
+                 "gid":11019,
+                 "height":24,
+                 "id":226,
+                 "name":"ghost",
+                 "properties":[
+                        {
+                         "name":"interactable",
+                         "type":"bool",
+                         "value":true
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":1084.66666666667,
+                 "y":1309.33333333334
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -799,7 +817,7 @@
          "y":0
         }],
  "nextlayerid":57,
- "nextobjectid":223,
+ "nextobjectid":227,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.8.6",
@@ -827,11 +845,11 @@
          "source":"..\/..\/..\/tilesets\/MyCustomObjects.json"
         }, 
         {
-         "firstgid":11019,
+         "firstgid":11020,
          "source":"..\/..\/..\/..\/.bundled\/tilesets\/TwilioQuestNPCs.json"
         }, 
         {
-         "firstgid":11031,
+         "firstgid":11032,
          "source":"..\/..\/..\/tilesets\/twilioLogos.json"
         }],
  "tilewidth":24,
