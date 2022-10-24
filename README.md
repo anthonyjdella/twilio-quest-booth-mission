@@ -110,6 +110,7 @@ I think it's best not to have multiple windows running, just TQ with this Booth 
 -   [x] Reskin the map
 -   [ ] Create a custom character (me) in Pixel Art
 -   [ ] Add a phone on the map which makes a phone call on interacts
+-   [x] Add a showcase so people can try out demo apps that we've made
 
 ## License
 
