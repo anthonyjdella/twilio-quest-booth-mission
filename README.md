@@ -9,6 +9,7 @@
 
 ## Contents
 
+-   [Video](#video)
 -   [What's Different with this Version?](#what-is-different-with-this-version)
 -   [Installing the Extension](#installing-the-extension)
 -   [Getting Started](#getting-started)
@@ -21,6 +22,12 @@
 -   [License](#license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+---
+
+## Video
+
+[![Me showcasing the game](https://img.youtube.com/vi/79gDaWFpC7Y/0.jpg)](https://www.youtube.com/watch?v=79gDaWFpC7Y)
 
 ---
 
